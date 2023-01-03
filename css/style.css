@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
+
 :root {
   --color1: #F2E8DF;
   --color2: #F2B263;
@@ -17,6 +19,7 @@ html, body {
 
 body {
   background-color:var(--color1);
+  font-family: 'Roboto Mono', monospace;
   display: flex;
   align-items: center;
   color: var(--color3);
@@ -47,8 +50,8 @@ body {
 
 .relogio {
   border: solid black 1px;
-  height: 150px;
-  width: 150px;
+  height: 140px;
+  width: 140px;
   display: flex;
 
   flex-direction: column;
