@@ -1,4 +1,7 @@
 import { relogio } from "./relogio.js";
 
-relogio.test();
-// relogio.diferençaDeTempo();
+// relogio.iniciar();
+setInterval(() => {
+  relogio.iniciar()
+  console.log('ok');
+}, 1000);

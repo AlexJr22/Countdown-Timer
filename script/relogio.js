@@ -14,13 +14,30 @@ const relogio = {
   day: ((1000 * 60) * 60) * 24,           // day em milisegundos
   year: (((1000 * 60) * 60) * 24) * 365,  // ano em milisegundos
 
+  iniciar() {
+    const SegundosTotais = () => {
+      return Math.round(diferençaDeTempo() / relogio.secunds); // calcula quando segundos faltam para a data futura
+    };
+    
+    const tempoEmSegundo = () => {
+      return SegundosTotais() % 60;
+    }; 
+    
+    const diferençaDeTempo = () => {
+      return relogio.dataFutura.getTime() - relogio.dataAtual.getTime();
+    }; 
+
+    Segundo.innerHTML = tempoEmSegundo();
+  },
   
-  diferençaDeTempo() {
-    return this.dataFutura.getTime() - this.dataAtual.getTime();
-  }, 
+
   test() {
-    console.log(this.diferençaDeTempo());
-  }
+    console.log(relogio.SegundosTotais())
+    setInterval(() => {
+      
+      console.log(relogio.tempoEmSegundo())
+    }, 1000);
+  },
 };
 
 export { relogio };
