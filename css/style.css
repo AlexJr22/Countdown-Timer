@@ -30,4 +30,13 @@ body {
   
   justify-content: center;
   align-items: center;
+
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px #00000080;
+  transition: .3s;
+}
+
+#container:hover {
+  transition: .3s;
+  transform: scale(1.1);
 }
