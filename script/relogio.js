@@ -14,8 +14,12 @@ const relogio = {
   day: ((1000 * 60) * 60) * 24,           // day em milisegundos
   year: (((1000 * 60) * 60) * 24) * 365,  // ano em milisegundos
 
+  
+  diferençaDeTempo() {
+    return this.dataFutura.getTime() - this.dataAtual.getTime();
+  }, 
   test() {
-    console.log(this.year);
+    console.log(this.diferençaDeTempo());
   }
 };
 
