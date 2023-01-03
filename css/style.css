@@ -1,5 +1,7 @@
 :root {
-  --color1: rgb(158, 186, 115);
+  --color1: #F2E8DF;
+  --color2: #F2B263;
+  --color3: #4e3939;
 }
 
 * {
@@ -14,13 +16,14 @@ html, body {
 }
 
 body {
-  background-color: rgb(11, 238, 238);
+  background-color:var(--color1);
   display: flex;
   align-items: center;
+  color: var(--color3);
 }
 
 #container {
-  background-color: var(--color1);
+  background-color: var(--color2);
 
   width: 50%;
   height: 50%;
