@@ -25,7 +25,7 @@ body {
   color: var(--color3);
 }
 
-#container {
+#containerTempo {
   background-color: var(--color2);
 
   width: 50%;
@@ -43,7 +43,7 @@ body {
   transition: .3s;
 }
 
-#container:hover {
+#containerTempo:hover {
   transition: .3s;
   transform: scale(1.1);
 }
@@ -69,4 +69,8 @@ body {
 
 .tempo {
   font-size: 1.6em;
+}
+
+#containerData {
+  display: none;
 }
