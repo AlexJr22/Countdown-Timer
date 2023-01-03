@@ -22,13 +22,14 @@ body {
 #container {
   background-color: var(--color1);
 
-  width: 700px;
-  height: 450px;
+  width: 50%;
+  height: 50%;
   display: flex;
 
   margin-inline: auto;
+  padding: 20px;
   
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 
   border-radius: 20px;
@@ -39,4 +40,15 @@ body {
 #container:hover {
   transition: .3s;
   transform: scale(1.1);
+}
+
+.relogio {
+  border: solid black 1px;
+  height: 150px;
+  width: 150px;
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
