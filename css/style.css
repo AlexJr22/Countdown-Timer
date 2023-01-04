@@ -18,7 +18,8 @@ html, body {
 }
 
 body {
-  background-color:var(--color1);
+  /* background-color:var(--color1); */
+  background-color: lightblue;
   font-family: 'Roboto Mono', monospace;
   display: flex;
   align-items: center;
