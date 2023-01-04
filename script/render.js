@@ -11,6 +11,7 @@ const render = {
   tempoEmSegundos: tempo => tempo % 60,
   tempoEmMinutos: tempo => Math.floor(tempo / 60) % 60,
   tempoEmHoras: tempo => Math.floor(Math.floor(tempo / 60) / 60),
+  tempoEmDias: tempo => Math.floor(Math.floor(tempo / 60) / 60 / 24),
   
   render() {
 
@@ -24,6 +25,10 @@ const render = {
   
     Hora.innerHTML = `
       ${String(render.tempoEmHoras(relogio.tempo)).padStart(2, "0")}
+    `;
+
+    Dia.innerHTML = `
+      ${String(render.tempoEmDias(relogio.tempo)).padStart(2, "0")}
     `;
     
   },
