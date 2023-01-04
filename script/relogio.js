@@ -11,11 +11,9 @@ const relogio = {
   },
 
   cronometro() {
-    
     render.render();
     
     relogio.tempo -= 1;
-
   },
 };
 
