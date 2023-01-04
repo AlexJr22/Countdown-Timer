@@ -10,7 +10,7 @@ const render = {
 
   tempoEmSegundos: tempo => tempo % 60,
   tempoEmMinutos: tempo => Math.floor(tempo / 60) % 60,
-  tempoEmHoras: tempo => Math.floor(Math.floor(tempo / 60) / 60),
+  tempoEmHoras: tempo => Math.floor(Math.floor(tempo / 60) / 60) % 24,
   tempoEmDias: tempo => Math.floor(Math.floor(tempo / 60) / 60 / 24),
   
   render() {
