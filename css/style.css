@@ -2,6 +2,7 @@
 
 @import url(./containerTempo.css);
 @import url(./containerData.css);
+@import url(./btnIniciar.css);
 
 :root {
   --color1: #F2E8DF;
