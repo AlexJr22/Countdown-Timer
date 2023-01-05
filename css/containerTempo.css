@@ -1,0 +1,45 @@
+#containerTempo {
+  background-color: var(--color2);
+
+  width: 50%;
+  height: 50%;
+  display: flex;
+
+  margin-inline: auto;
+  padding: 20px;
+  
+  justify-content: space-around;
+  align-items: center;
+
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px #00000080;
+  transition: .3s;
+}
+
+#containerTempo:hover {
+  transition: .3s;
+  transform: scale(1.1);
+}
+
+.relogio {
+  border: solid var(--color3) 1px;
+  height: 140px;
+  width: 140px;
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  box-shadow: 2px 2px 10px #00000080;
+}
+
+.Text {
+  width: 80px;
+  border-top: 1px solid black;
+  text-align: center;
+}
+
+.tempo {
+  font-size: 1.6em;
+}
