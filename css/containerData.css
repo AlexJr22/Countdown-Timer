@@ -39,7 +39,7 @@
   border: solid var(--color3) 1px;
   box-shadow: 2px 2px 10px #00000080;
 
-  transform: translateY(14px);
+  transform: translateY(5px);
 }
 
 #containerData > input[type="date"]:focus {
