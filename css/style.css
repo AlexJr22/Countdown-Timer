@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
 
 @import url(./containerTempo.css);
+@import url(./containerData.css);
 
 :root {
   --color1: #F2E8DF;
@@ -26,8 +27,4 @@ body {
   display: flex;
   align-items: center;
   color: var(--color3);
-}
-
-#containerData {
-  display: none;
 }
