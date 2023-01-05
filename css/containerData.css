@@ -2,8 +2,8 @@
   display: flex;
   position: relative;
 
-  width: 30%;
-  height: 30%;
+  width: 410px;
+  height: 205px;
 
   margin-inline: auto;
   background-color: var(--color2);
