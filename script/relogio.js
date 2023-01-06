@@ -7,7 +7,15 @@ const relogio = {
   iniciar() {
     relogio.tempo = timer.Segundos();
 
+    if (relogio.tempo <= 0) {
+      alert("Selecione uma data maior que a data atual!");
+      return;
+    };
+
     setInterval(relogio.cronometro, 1000);
+    
+    document.getElementById('containerData').style.display = 'none';
+    document.getElementById('containerTempo').style.display = 'flex';
   },
 
   cronometro() {
