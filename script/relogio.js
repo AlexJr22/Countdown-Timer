@@ -3,6 +3,7 @@ import { render } from "./render.js";
 
 const relogio = {
   tempo: 0,
+  interval: null,
 
   iniciar() {
     relogio.tempo = timer.Segundos();
@@ -11,8 +12,7 @@ const relogio = {
       alert("Selecione uma data maior que a data atual!");
       return;
     };
-
-    setInterval(relogio.cronometro, 1000);
+    relogio.interval = setInterval(relogio.cronometro, 1000);
     
     document.getElementById('containerData').style.display = 'none';
     document.getElementById('containerTempo').style.display = 'flex';
@@ -22,6 +22,10 @@ const relogio = {
     render.render();
     
     relogio.tempo -= 1;
+    if (relogio.tempo < 0) {
+      alert("O tempo acabou!");
+      clearInterval(relogio.interval);
+    };
   },
 };
 
