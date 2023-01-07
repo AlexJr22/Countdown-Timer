@@ -33,6 +33,6 @@ const render = {
     
   },
   
-}
+};
 
 export { render };
