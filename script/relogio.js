@@ -2,13 +2,14 @@ import { timer } from "./getTimes.js";
 import { render } from "./render.js";
 
 const relogio = {
-  tempo: 0,
+  tempoInicial: 0,
+  tempoAtual: 0,
   interval: null,
 
   iniciar(date) {
-    relogio.tempo = timer.Segundos(date);
+    relogio.tempoAtual = timer.Segundos(date);
 
-    if (relogio.tempo <= 0) {
+    if (relogio.tempoAtual <= relogio.tempoInicial) {
       alert("Selecione uma data maior que a data atual!");
       return;
     };
@@ -21,8 +22,8 @@ const relogio = {
   cronometro() {
     render.render();
     
-    relogio.tempo -= 1;
-    if (relogio.tempo < 0) {
+    relogio.tempoAtual -= 1;
+    if (relogio.tempoAtual < relogio.tempoInicial) {
       alert("O tempo acabou!");
       clearInterval(relogio.interval);
     };

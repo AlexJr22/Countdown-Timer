@@ -16,19 +16,19 @@ const render = {
   render() {
 
     Segundo.innerHTML = `
-      ${String(render.tempoEmSegundos(relogio.tempo)).padStart(2, "0")}
+      ${String(render.tempoEmSegundos(relogio.tempoAtual)).padStart(2, "0")}
     `;
     
     Minuto.innerHTML = `
-      ${String(render.tempoEmMinutos(relogio.tempo)).padStart(2, "0")}
+      ${String(render.tempoEmMinutos(relogio.tempoAtual)).padStart(2, "0")}
     `;
   
     Hora.innerHTML = `
-      ${String(render.tempoEmHoras(relogio.tempo)).padStart(2, "0")}
+      ${String(render.tempoEmHoras(relogio.tempoAtual)).padStart(2, "0")}
     `;
 
     Dia.innerHTML = `
-      ${String(render.tempoEmDias(relogio.tempo)).padStart(2, "0")}
+      ${String(render.tempoEmDias(relogio.tempoAtual)).padStart(2, "0")}
     `;
     
   },
