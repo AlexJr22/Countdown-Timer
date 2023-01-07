@@ -5,8 +5,8 @@ const relogio = {
   tempo: 0,
   interval: null,
 
-  iniciar() {
-    relogio.tempo = timer.Segundos();
+  iniciar(date) {
+    relogio.tempo = timer.Segundos(date);
 
     if (relogio.tempo <= 0) {
       alert("Selecione uma data maior que a data atual!");
