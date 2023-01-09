@@ -15,6 +15,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Roboto Mono', monospace;
+  color: var(--color3);
 }
 
 html, body {
@@ -27,5 +28,4 @@ body {
   background-color: lightblue;
   display: flex;
   align-items: center;
-  color: var(--color3);
 }
